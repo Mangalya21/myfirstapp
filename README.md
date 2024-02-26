@@ -1,4 +1,4 @@
 # Android App
 
 
-This is my first android project!
+This is our first android project!
