@@ -13,11 +13,14 @@
         android:theme="@style/Theme.Hackathon"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
-            android:label="home"
+            android:name=".LoginOtpActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginPhoneNumber"
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="home" />
+        <activity
+            android:name=".LoginPhoneNumberActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginPhoneNumber">
+    tools:context=".LoginPhoneNumberActivity"
+    tools:ignore="ExtraText">
 
     <ImageView
         android:id="@+id/imageView"
@@ -29,42 +30,48 @@
         tools:ignore="MissingConstraints" />
 
     <com.hbb20.CountryCodePicker
-        android:id="@+id/countrycodepicker"
+        android:id="@+id/country_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:ccp_defaultNameCode="IND"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="710dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="298dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/number_input_border"
-        app:ccp_showFlag="false"
-        app:ccp_showNameCode="false"
+        android:elevation="5dp"
+        android:inputType="phone"
+        android:letterSpacing=".15"
+        android:paddingLeft="30dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="30dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:flow_horizontalBias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <EditText
-        android:id="@+id/phoneInput"
-        android:inputType="number"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/number_input_border"
-        android:elevation="5dp"
-        app:layout_constraintLeft_toRightOf="@id/countrycodepicker"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
     <Button
-        android:layout_width="250dp"
+        android:id="@+id/get_otp_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/phoneInput"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:text="@string/get_otp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/red"
-        />
+        android:text="@string/get_otp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_input" />
 
 
 
