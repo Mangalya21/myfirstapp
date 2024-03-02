@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         Handler handler=new Handler();
-        handler.postDelayed(runnable,3000);
+        handler.postDelayed(runnable,2000);
 
     }
 }
