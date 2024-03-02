@@ -2,6 +2,7 @@ package com.example.hackathon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,10 +39,15 @@ public class LoginPhoneNumberActivity extends AppCompatActivity {
                    Toast.makeText(LoginPhoneNumberActivity.this, "Please enter a valid number", Toast.LENGTH_SHORT).show();
                }
                else {
-                   Toast.makeText(LoginPhoneNumberActivity.this, countryCode.getFullNumber(), Toast.LENGTH_SHORT).show();
+                   Toast.makeText(LoginPhoneNumberActivity.this, countryCode.getFullNumberWithPlus(), Toast.LENGTH_SHORT).show();
+                   Intent intent = new Intent(LoginPhoneNumberActivity.this,LoginOtpActivity.class);
+                   intent.putExtra("phone",countryCode.getFullNumberWithPlus());
+                   startActivity(intent);
                }
            }
+
        });
+
 
     }
 
