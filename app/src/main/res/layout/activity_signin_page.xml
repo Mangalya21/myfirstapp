@@ -133,15 +133,19 @@
             app:layout_constraintRight_toRightOf="parent"
             android:paddingBottom="30dp"
             android:orientation="vertical">
+
                 <Button
+                    android:id="@+id/blood_bank_button"
                     android:layout_width="match_parent"
+                    android:layout_height="70dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_height="70dp"
                     android:backgroundTint="@color/need"
+                    android:onClick="bloodbanklistner"
                     android:text="Blood Bank"
-                    android:textSize="30dp"/>
+                    android:textSize="30dp" />
                 <Button
+                    android:id="@+id/user_button"
                     android:layout_width="match_parent"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"

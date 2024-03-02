@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/need">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full name"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint=""
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of birth"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prevailing Health Conditions"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint=""
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint=""
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/user_button"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/white"
+            android:text="REGISTER FOR CHECKUP"
+            android:textColor="@color/need"
+            android:textSize="25dp"/>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

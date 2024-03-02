@@ -40,7 +40,7 @@ public class LoginPhoneNumberActivity extends AppCompatActivity {
                }
                else {
                    Toast.makeText(LoginPhoneNumberActivity.this, countryCode.getFullNumberWithPlus(), Toast.LENGTH_SHORT).show();
-                   Intent intent = new Intent(LoginPhoneNumberActivity.this,LoginOtpActivity.class);
+                   Intent intent = new Intent(LoginPhoneNumberActivity.this,Signup.class);
                    intent.putExtra("phone",countryCode.getFullNumberWithPlus());
                    startActivity(intent);
                }
