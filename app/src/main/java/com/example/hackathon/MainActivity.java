@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent=new Intent(this, LoginPhoneNumberActivity.class);
+        Intent intent=new Intent(this, SigninPage.class);
 
         Runnable runnable=new Runnable() {
             @Override
