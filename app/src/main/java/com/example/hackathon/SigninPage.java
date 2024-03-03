@@ -9,7 +9,6 @@ import android.widget.Button;
 
 public class SigninPage extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +28,8 @@ public class SigninPage extends AppCompatActivity {
     }
 
     public void bloodbanklistner(View view){
-            Intent bloodbank=new Intent(SigninPage.this,LoginOtpActivity.class);
-            startActivity(bloodbank);
+        Intent bloodbank=new Intent(SigninPage.this,LoginOtpActivity.class);
+        startActivity(bloodbank);
 
 
 

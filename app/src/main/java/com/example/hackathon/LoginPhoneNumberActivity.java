@@ -36,11 +36,10 @@ public class LoginPhoneNumberActivity extends AppCompatActivity {
            @Override
            public void onClick(View view) {
                if (!countryCode.isValidFullNumber()){
-                   Toast.makeText(LoginPhoneNumberActivity.this, "Please enter a valid number", Toast.LENGTH_SHORT).show();
+                   phoneInput.setError("Phone number not valid");
                }
                else {
-                   Toast.makeText(LoginPhoneNumberActivity.this, countryCode.getFullNumberWithPlus(), Toast.LENGTH_SHORT).show();
-                   Intent intent = new Intent(LoginPhoneNumberActivity.this,Signup.class);
+                   Intent intent = new Intent(LoginPhoneNumberActivity.this,LoginOtpActivity.class);
                    intent.putExtra("phone",countryCode.getFullNumberWithPlus());
                    startActivity(intent);
                }
