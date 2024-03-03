@@ -58,7 +58,6 @@
                             android:text="Blood Bank"
                             android:textStyle="bold"
                             android:textSize="25dp"
-                            android:textColor="@color/black"
                             android:gravity="center"
                             android:layout_gravity="center"
                             />
@@ -101,7 +100,6 @@
                             android:text="User"
                             android:textStyle="bold"
                             android:textSize="25dp"
-                            android:textColor="@color/black"
                             android:gravity="center"
                             android:layout_gravity="center"
                             />
@@ -135,18 +133,19 @@
             app:layout_constraintRight_toRightOf="parent"
             android:paddingBottom="30dp"
             android:orientation="vertical">
+
                 <Button
-                    android:id="@+id/blood_bank_btn"
+                    android:id="@+id/blood_bank_button"
                     android:layout_width="match_parent"
+                    android:layout_height="70dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_height="70dp"
                     android:backgroundTint="@color/need"
+                    android:onClick="bloodbanklistner"
                     android:text="Blood Bank"
-                    android:textSize="30dp"
-                    android:textColor="@color/white"/>
+                    android:textSize="30dp" />
                 <Button
-                    android:id="@+id/user_btn"
+                    android:id="@+id/user_button"
                     android:layout_width="match_parent"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
@@ -154,8 +153,7 @@
                     android:layout_height="70dp"
                     android:backgroundTint="@color/need"
                     android:text="User"
-                    android:textSize="30dp"
-                    android:textColor="@color/white"/>
+                    android:textSize="30dp"/>
         </LinearLayout>
 
 

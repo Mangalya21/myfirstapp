@@ -9,20 +9,30 @@ import android.widget.Button;
 
 public class SigninPage extends AppCompatActivity {
 
-    Button userBtn = findViewById(R.id.user_btn);
-    Button bloodBankBtn = findViewById(R.id.blood_bank_btn);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin_page);
-
-        userBtn.setOnClickListener(new View.OnClickListener() {
+        Button bloodbankbutton = findViewById(R.id.blood_bank_button);
+        Button userbutton = findViewById(R.id.user_button);
+        userbutton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SigninPage.this,LoginPhoneNumberActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                Intent user = new Intent(SigninPage.this, LoginPhoneNumberActivity.class);
+
+                startActivity(user);
             }
+
         });
+
+    }
+
+    public void bloodbanklistner(View view){
+            Intent bloodbank=new Intent(SigninPage.this,LoginOtpActivity.class);
+            startActivity(bloodbank);
+
+
 
     }
 }
