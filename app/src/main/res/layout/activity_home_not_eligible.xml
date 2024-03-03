@@ -114,18 +114,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:text="✔"
+                android:text="X"
                 android:gravity="center"
                 android:textSize="80dp"
                 android:textColor="@color/white"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/donar_status_background"
+                android:background="@drawable/not_eligible_donar_background"
                 />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="you can donate "
+                android:layout_height="30dp"
+                android:text="you can't donate"
                 android:gravity="center"
                 android:textColor="@color/Gray"
 
