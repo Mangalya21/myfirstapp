@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFF0000</color>
     <color name="need">#FFF44545</color>
+    <color name="Green">#FF9CF863</color>
+    <color name="Gray">#FF9F8F8F</color>
+    <color name="pitch">#FFFFC453</color>
+    <color name="bloodred">#FFC50000</color>
 </resources>
