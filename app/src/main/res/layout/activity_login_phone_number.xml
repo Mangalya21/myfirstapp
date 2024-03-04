@@ -16,8 +16,7 @@
         android:src="@drawable/design1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        android:adjustViewBounds=""/>
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView"
