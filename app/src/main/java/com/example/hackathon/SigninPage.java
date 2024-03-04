@@ -28,7 +28,7 @@ public class SigninPage extends AppCompatActivity {
     }
 
     public void bloodbanklistner(View view){
-        Intent bloodbank=new Intent(SigninPage.this,LoginOtpActivity.class);
+        Intent bloodbank=new Intent(SigninPage.this, HomeActivity.class);
         startActivity(bloodbank);
 
 

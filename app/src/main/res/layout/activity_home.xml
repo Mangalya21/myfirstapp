@@ -60,7 +60,7 @@
                 android:textSize="25dp"
                 android:gravity="center"
                 android:layout_gravity="center"
-                />
+                android:textColor="@color/black"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
@@ -75,7 +75,8 @@
                 android:textColor="@color/white"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/bloog_group_background"/>
+                android:background="@drawable/bloog_group_background"
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -105,7 +106,7 @@
                 android:textSize="25dp"
                 android:gravity="center"
                 android:layout_gravity="center"
-                />
+                android:textColor="@color/black"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
@@ -152,7 +153,8 @@
             android:layout_marginRight="30dp"
             android:backgroundTint="@color/bloodred"
             android:text="Find Donars"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
         <Button
             android:id="@+id/user_button"
             android:layout_width="match_parent"
@@ -162,7 +164,8 @@
             android:layout_height="70dp"
             android:backgroundTint="@color/Gray"
             android:text="User"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
 

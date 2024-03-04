@@ -88,14 +88,16 @@
             android:layout_marginLeft="20dp"/>
 
         <TextView
+            android:id="@+id/resend_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resend OTP"
-            android:textSize="21dp"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
             android:clickable="true"
-            android:textColor="@color/need"/>
+            android:onClick="resend"
+            android:text="Resend OTP"
+            android:textColor="@color/need"
+            android:textSize="21dp" />
 
     </LinearLayout>
 
