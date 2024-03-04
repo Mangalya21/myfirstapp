@@ -100,7 +100,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/get_otp_btn"
+        android:id="@+id/verify_otp_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
@@ -111,7 +111,6 @@
         android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lin_lay_2"
-        android:clickable="false"/>
+        app:layout_constraintTop_toBottomOf="@id/lin_lay_2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

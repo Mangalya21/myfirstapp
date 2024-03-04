@@ -9,16 +9,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="277dp"
-        android:layout_height="282dp"
-
-
+        android:layout_width="290dp"
+        android:layout_height="270dp"
         android:foregroundGravity="left"
         android:outlineAmbientShadowColor="@color/black"
         android:src="@drawable/design1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:adjustViewBounds=""/>
 
     <TextView
         android:id="@+id/textView"
@@ -70,14 +69,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="#FFFF9595"
         android:text="@string/get_otp"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phone_input"
-        android:clickable="false"/>
+        android:enabled="false"/>
 
 
 

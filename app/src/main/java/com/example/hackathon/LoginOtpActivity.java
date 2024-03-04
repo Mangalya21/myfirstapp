@@ -2,9 +2,15 @@ package com.example.hackathon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.chaos.view.PinView;
 
 public class LoginOtpActivity extends AppCompatActivity {
 
@@ -19,5 +25,6 @@ public class LoginOtpActivity extends AppCompatActivity {
         number = findViewById(R.id.phone);
         number.setText(phoneNumber);
         Toast.makeText(this, phoneNumber, Toast.LENGTH_SHORT).show();
+
     }
 }
