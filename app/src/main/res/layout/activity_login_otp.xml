@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="verify"
     tools:context=".LoginOtpActivity">
 
     <ImageView
@@ -14,7 +15,7 @@
         android:outlineAmbientShadowColor="@color/black"
         android:src="@drawable/design2"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/otp_string"
@@ -23,69 +24,69 @@
         android:text="OTP Verification"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <LinearLayout
         android:id="@+id/lin_lay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/otp_string"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/otp_string">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enter the OTP sent to "
-            android:textSize="20dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="5dp"/>
+            android:layout_marginRight="5dp"
+            android:text="Enter the OTP sent to "
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
     </LinearLayout>
 
     <com.chaos.view.PinView
         android:id="@+id/pinview"
-        app:itemCount="6"
-        app:itemWidth="50dp"
-        app:itemHeight="50dp"
-        android:gravity="center"
-        android:layout_marginTop="45dp"
+        style="@style/PinWidget.PinView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:itemBackground="@color/white"
         android:layout_gravity="center"
-        android:inputType="number"
+        android:layout_marginTop="45dp"
         android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:itemBackground="@color/white"
+        android:textColor="@color/black"
         app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
         app:itemRadius="10dp"
-        style="@style/PinWidget.PinView"
-        app:layout_constraintRight_toRightOf="parent"
+        app:itemWidth="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lin_lay"
-        android:textColor="@color/black"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lin_lay" />
 
     <LinearLayout
         android:id="@+id/lin_lay_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/pinview"
+        android:layout_marginLeft="20dp"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp">
+        app:layout_constraintTop_toBottomOf="@id/pinview">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Didn't receive an OTP?"
-            android:textSize="21dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"/>
+            android:text="Didn't receive an OTP?"
+            android:textSize="21dp" />
 
         <TextView
             android:id="@+id/resend_text"
@@ -108,11 +109,12 @@
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="60dp"
         android:backgroundTint="@color/red"
+        android:onClick="verify"
         android:text="VERIFY"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lin_lay_2"/>
+        app:layout_constraintTop_toBottomOf="@id/lin_lay_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

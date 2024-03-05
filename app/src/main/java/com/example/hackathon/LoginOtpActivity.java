@@ -35,5 +35,8 @@ public class LoginOtpActivity extends AppCompatActivity {
     public void resend(View view){
         Toast.makeText(this, "Resending OTP", Toast.LENGTH_SHORT).show();
     }
-
+    public void verify(View view){
+        Intent intent = new Intent(getApplicationContext(), FiltterBloodGroup.class);
+        startActivity(intent);
+    }
 }

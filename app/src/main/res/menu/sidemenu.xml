@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/profile_menu"
+            android:icon="@drawable/profile_vector"
+            android:title="Profile" />
+
+        <item android:id="@+id/rewards_menu"
+            android:icon="@drawable/reward_vector"
+            android:title="Rewards"/>
+
+        <item android:id="@+id/requests_menu"
+            android:icon="@drawable/request_vector"
+            android:title="Requests"/>
+
+        <item android:id="@+id/history_menu"
+            android:icon="@drawable/history_vector"
+            android:title="History"/>
+
+    </group>
+
 </menu>
