@@ -49,9 +49,8 @@
             android:layout_marginLeft="25dp"
             android:layout_marginRight="40dp"
             android:hint=""
-            android:inputType="number"
-            android:textColor="@color/white"
-            />
+            android:inputType="date"
+            android:textColor="@color/white" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

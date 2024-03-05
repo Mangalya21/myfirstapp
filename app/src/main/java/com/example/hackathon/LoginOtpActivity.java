@@ -35,4 +35,5 @@ public class LoginOtpActivity extends AppCompatActivity {
     public void resend(View view){
         Toast.makeText(this, "Resending OTP", Toast.LENGTH_SHORT).show();
     }
+
 }

@@ -147,22 +147,24 @@
         <Button
             android:id="@+id/find_donar"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:backgroundTint="@color/bloodred"
             android:text="Find Donars"
-            android:textSize="30dp" />
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
         <Button
             android:id="@+id/user_button"
             android:layout_width="match_parent"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:layout_marginTop="20dp"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:backgroundTint="@color/Gray"
             android:text="User"
-            android:textSize="30dp"/>
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
 

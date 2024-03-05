@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiltterBloodGroup">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keyboardNavigationCluster="false"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Patient Blood Type"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="8"
+
+
+            >
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="A+"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="A-"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="B+"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="B-"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="O+"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="O-"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="AB+"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="AB-"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Patient Gender"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="8"
+
+
+            >
+
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="Male"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="Female"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Patient Relation"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="8"
+
+
+            >
+
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="Family"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp"
+
+                />
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="Friend"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp"
+
+                />
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/radio_button_selector"
+                android:button="@color/white"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:text="Other"
+                android:textColor="@drawable/radio_text_color"
+                android:textSize="20dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Patient Age"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="18"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:background="@drawable/radio_button_noraml"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/find_donar"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/bloodred"
+        android:text="Find Donars"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
