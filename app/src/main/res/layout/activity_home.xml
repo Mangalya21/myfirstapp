@@ -7,7 +7,7 @@
     tools:context=".HomeActivity"
     android:id="@+id/drawerlayout"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    tools:openDrawer="left">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -15,7 +15,9 @@
         android:id="@+id/navigationview"
         app:headerLayout="@layout/headerfile"
         app:menu="@menu/sidemenu"
-        android:layout_gravity="start" />
+        android:layout_gravity="start"
+        app:itemIconPadding="15dp"
+        app:itemIconSize="30dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -53,8 +55,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:titleTextColor="@color/white"
-        app:logo="@drawable/ic_sidemenu"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        />
 
     <LinearLayout
         android:id="@+id/linear_flag_holder"
