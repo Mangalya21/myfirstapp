@@ -36,7 +36,8 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false"
-            android:label="home"
+            android:label=""
+
             android:screenOrientation="portrait" />
         <activity
             android:name=".LoginPhoneNumberActivity"
