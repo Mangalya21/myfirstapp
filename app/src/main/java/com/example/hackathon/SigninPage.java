@@ -18,7 +18,7 @@ public class SigninPage extends AppCompatActivity {
         userbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent user = new Intent(SigninPage.this, LoginPhoneNumberActivity.class);
+                Intent user = new Intent(SigninPage.this, UserLoginPhoneNumberActivity.class);
 
                 startActivity(user);
             }
@@ -28,7 +28,7 @@ public class SigninPage extends AppCompatActivity {
     }
 
     public void bloodbanklistner(View view){
-        Intent bloodbank=new Intent(SigninPage.this, HomeActivity.class);
+        Intent bloodbank=new Intent(SigninPage.this, UserHomeActivity.class);
         startActivity(bloodbank);
 
 

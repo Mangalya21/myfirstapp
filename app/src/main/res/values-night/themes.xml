@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Hackathon" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <item name="android:statusBarColor" >
+        <item name="android:statusBarColor">
             #F44545
         </item>
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->

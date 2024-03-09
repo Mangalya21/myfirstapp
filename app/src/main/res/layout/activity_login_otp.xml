@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="verify"
-    tools:context=".LoginOtpActivity">
+    tools:context=".UserLoginOtpActivity">
 
     <ImageView
         android:id="@+id/imageView"
