@@ -9,6 +9,6 @@ public class UserHomeActivityNotEligible extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_not_eligible);
+        setContentView(R.layout.activity_user_home_not_eligible);
     }
 }

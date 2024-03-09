@@ -21,7 +21,7 @@ public class UserHomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_user_home);
         Button findBloodBank=findViewById(R.id.find_donar);
 
         drawerLayout = findViewById(R.id.drawerlayout);

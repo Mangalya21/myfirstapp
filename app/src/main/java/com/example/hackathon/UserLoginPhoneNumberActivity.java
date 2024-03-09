@@ -23,7 +23,7 @@ public class UserLoginPhoneNumberActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_phone_number);
+        setContentView(R.layout.activity_user_login_phone_number);
 
         countryCode = findViewById(R.id.country_code);
         phoneInput = findViewById(R.id.phone_input);
