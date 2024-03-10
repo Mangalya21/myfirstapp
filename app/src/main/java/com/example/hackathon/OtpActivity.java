@@ -14,7 +14,7 @@ import android.widget.EditText;
 import com.hbb20.CountryCodePicker;
 
 
-public class UserLoginPhoneNumberActivity extends AppCompatActivity {
+public class OtpActivity extends AppCompatActivity {
 
     CountryCodePicker countryCode;
     EditText phoneInput;
@@ -23,7 +23,7 @@ public class UserLoginPhoneNumberActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_login_phone_number);
+        setContentView(R.layout.activity_otp);
 
         countryCode = findViewById(R.id.country_code);
         phoneInput = findViewById(R.id.phone_input);
@@ -37,7 +37,7 @@ public class UserLoginPhoneNumberActivity extends AppCompatActivity {
        getOtpBtn.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent intent = new Intent(UserLoginPhoneNumberActivity.this, UserLoginOtpActivity.class);
+               Intent intent = new Intent(OtpActivity.this, OtpPinActivity.class);
                intent.putExtra("phone",countryCode.getFullNumberWithPlus());
                startActivity(intent);
 

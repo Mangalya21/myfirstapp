@@ -18,7 +18,7 @@ public class SigninPage extends AppCompatActivity {
         userbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent user = new Intent(SigninPage.this, UserLoginPhoneNumberActivity.class);
+                Intent user = new Intent(SigninPage.this, OtpActivity.class);
 
                 startActivity(user);
             }
