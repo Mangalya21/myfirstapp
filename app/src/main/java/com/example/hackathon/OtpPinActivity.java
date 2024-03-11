@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class UserLoginOtpActivity extends AppCompatActivity {
+public class OtpPinActivity extends AppCompatActivity {
 
     String phoneNumber;
     TextView number;
@@ -18,7 +18,7 @@ public class UserLoginOtpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_login_otp);
+        setContentView(R.layout.activity_otp_pin);
         
         resendText = findViewById(R.id.resend_text);
         phoneNumber = getIntent().getExtras().getString("phone");
