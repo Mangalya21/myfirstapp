@@ -13,18 +13,22 @@
         android:theme="@style/Theme.Hackathon"
         tools:targetApi="31">
         <activity
+            android:name=".BloodBankHomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".IdPassByEmailActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".IdPassByPhoneNumberActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".LoginForBank"
-            android:exported="false" />
-        <activity
-            android:name=".BloodBankLoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.Hackathon" />
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".FiltterBloodGroup"
             android:exported="false" />
