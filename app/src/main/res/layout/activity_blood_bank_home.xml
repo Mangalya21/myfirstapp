@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BloodBankHomeActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/title_radius"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Bank"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout"
+
+        >
+        <TableRow
+            android:background="@color/need"
+            android:weightSum="9"
+            android:layout_weight="2">
+            <TextView
+                android:text="Blood Group"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="Male Units"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="female Units"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="A+"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="A-"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="B+"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="B-"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="O+"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="O-"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="AB+"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="9"
+            android:background="@color/white">
+
+            <TextView
+                android:text="AB-"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_weight="3"/>
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/find_donar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/bloodred"
+        app:layout_constraintTop_toBottomOf="@id/table"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="50dp"
+        android:text="Manage Inventory"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
