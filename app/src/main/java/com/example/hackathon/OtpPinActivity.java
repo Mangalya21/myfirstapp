@@ -32,7 +32,7 @@ public class OtpPinActivity extends AppCompatActivity {
         Toast.makeText(this, "Resending OTP", Toast.LENGTH_SHORT).show();
     }
     public void verify(View view){
-        Intent intent = new Intent(getApplicationContext(), UserHomeActivity.class);
-        startActivity(intent);
+        Intent signin = new Intent(OtpPinActivity.this, UserSignupActivity.class);
+        startActivity(signin);
     }
 }
