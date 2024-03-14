@@ -49,5 +49,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.hbb20:ccp:2.5.0")
     implementation("io.github.chaosleung:pinview:1.4.4")
+    implementation("com.android.volley:volley:1.2.1")
 
 }
