@@ -25,7 +25,7 @@ public class UserSignupActivity extends AppCompatActivity {
     Button registerbutton;
     EditText t1,t2,t3,t4,t5,t6;
 
-    private static final String url="http://10.53.13.115/userdata/register.php";
+    private static final String url="http://10.76.19.190/userdata/register.php";
 
 
     @Override
