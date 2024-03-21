@@ -184,17 +184,19 @@
             android:text="Find Blood Bank"
             android:textColor="@color/white"
             android:textSize="25dp" />
+
         <Button
             android:id="@+id/user_button"
             android:layout_width="match_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp"
             android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
             android:backgroundTint="@color/Gray"
+            android:onClick="requestmenu"
             android:text="User"
-            android:textSize="25dp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="25dp" />
     </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

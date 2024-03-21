@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:weightSum="2"
+    android:background="@drawable/radio_button_noraml"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/bloodbankname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Bank name"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+
+            />
+        <TextView
+            android:id="@+id/dateofappoinment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:dd-mm-yyyy"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Approved"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:id="@+id/status"
+
+            android:layout_gravity="center"
+            android:background="@color/need"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
